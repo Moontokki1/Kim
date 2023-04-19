@@ -2,6 +2,15 @@
 <meta charset="utf-8">
 <meta name="viewport"
 content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+<style>
+table {
+border-collapse: collapse;
+}
+td {
+border: solid 1px black;
+padding: 0.5em;
+}
+</style>
 <script>
 function parse(text) {
 return text.split('\n').map(line => line.split(','));
@@ -23,13 +32,7 @@ fetch('data.csv', { method: 'GET' })
 .then(response => response.text())
 .then(text => document.body.appendChild(create_table(parse(text))));
 </script> 
-<table>
-<title>時間割</title>
-<table>
-<tr><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th></tr>
-<tr><td></td><td>物理学</td><td>解析学</td><td>物理実験</td><td></td></tr>
-<tr><td>論理学</td><td>倫理学</td><td>FE</td><td>物理実験</td><td></td></tr>
-<tr><td>中国語</td><td>線形代数</td><td></td><td>解析学</td><td>RWS</td></tr>
-<tr><td>線形代数</td><td>哲学</td><td></td><td>ドイツ語</td><td></td></tr>
-<tr><td></td><td></td><td></td><td>計算機</td><td>情報数学</td></tr>
-</table>
+
+
+
+
