@@ -12,6 +12,10 @@ padding: 0.5em;
 }
 </style>
 <script>
+  if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('./service-worker.js');
+}
+function parse(text) {
 function parse(text) {
 return text.split('\n').map(line => line.split(','));
 }
