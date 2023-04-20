@@ -1,8 +1,8 @@
 {
 "name": "時間割",
 "short_name": "時間割",
-"theme_color": "#ff5733",
-"background_color": "#ff5733",
+"theme_color": "#0047AB",
+"background_color": "#0047AB",
 "display": "standalone",
 "start_url": "https://dirwptk.github.io/Kim/index.html",
 "icons": [
